@@ -1,14 +1,14 @@
- 使用git 遇到问题
+初识分布式是代码管理工具
  
   默认操作步骤
-	  1. mkdir 目录 新建文件
-	  2. git add xx.txt (放入暂存区)
-	  3. git commit -m 'first commit' (本地仓库初初始化)
-	  4. git reomte add orgin ssh地址 (本地仓库与远程仓库建立关联)
-	  5. git push -u origin master (第一次提交本地仓库master 分支到远程仓库)
+   1. mkdir 目录 新建文件 
+   2. git add xx.txt (放入暂存区)
+   3. git commit -m 'first commit' (本地仓库初初始化)
+   4. git reomte add orgin ssh地址 (本地仓库与远程仓库建立关联)
+   5. git push -u origin master (第一次提交本地仓库master 分支到远程仓库)
 
 
-  一直会遇到问题
+  一直会报以下问题：
    error Permission to richChen0815/gittest.git denied to 13526557907.
    fatal: Could not read from remote repository.
    
@@ -16,7 +16,7 @@
 	 
    这个问题让我想到了是不是ssh 配置有问题。
    
-  以下是ssh 配置过程
+   以下是ssh 配置过程
    
 	  1. ssh-keygen -t rsa -C 'richeChen0815' -f 'testkey'
 	   
@@ -55,11 +55,11 @@
 	   Identity added: /c/Users/Administrator/.ssh/testkey (richChen0815)
 	
 	
-		在执行远程提交操作成功了。。。
+	在执行远程提交操作成功了。。。
 		
 		
 		
-	总结：ssh-add 是把密钥放到ssh-agent 缓存中。问题出在ssh 私密钥没有读取。我的系统是windows ,我是在桌面生成一个密钥对，然后复制到用户名下的.ssh目录。
+	总结：ssh-add 是把密钥放到ssh-agent 缓存中。问题出在ssh 私密钥没有读取。我的系统是windows ,我是在桌面生成一个密钥对，然后复制到用户名下的.ssh目录。只能在一个窗口中使用。其他窗口如果没有配置就不生效。
 	
 	
 	  
