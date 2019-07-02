@@ -63,7 +63,67 @@
 	
 	
 	  
-	
+
+
+
+git 常用命令
+   本地操作
+      1.添加文件
+        git add .  
+
+      2.提交到本地仓库
+        git commit -m 'xxx'
+
+      3.查看工作区文件修改状态
+        git status
+
+      4.查看日志
+        git log  /   git reflog
+
+      5.版本切换
+       git reset --hard [coomit id | HEAD^^^^^^]
+       
+    本地仓库与远程
+      1.  git clone ssh 克隆远程仓库 
+              
+      2.git pull origin master
+     
+      3.git push orgin master (如果远程没有master分支，会自动创建master分支)
+      
+      4.git remote add origin xxx 本地关联远程仓库  默认是maste分支
+      
+   
+   分支管理
+   
+      1.git branch xx
+      
+      2.git checkout xx
+      
+      简写成 git checkout -b xx  切换并创建分支
+      
+      3.git branch -d xx  删除分支
+      
+      4.git merge dev   先切换到你要的分支，然后执行该操作。大致的意思就是 你把dev 分支过来。 接着你可以把不需要的分支remove.
+
+      5. git checkout -b dev origin/dev 创建与远程对应分支
+     
+      
+      工作区          缓存区           本地仓库      远程仓库 区别
+   
+      工作区间       git add (stage)  git init       github
+   
+   
+   合并远程分支操作
+   
+   本地分支merge 后，在推动到远程分支。大致逻辑是 把远程的分支代码
+   
+   
+   
+     
+     
+    
+     
+   
 	
 	
 	   
