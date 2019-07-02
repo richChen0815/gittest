@@ -115,7 +115,19 @@ git 常用命令
    
    合并远程分支操作
    
-   本地分支merge 后，在推动到远程分支。大致逻辑是 把远程的分支代码
+   本地分支merge 后，在推动到远程分支。本地合并完成在提交。
+   
+   
+   初始化工作区间设置以及提交的用户名邮箱信息
+      git init
+      git config --global user.name ''
+      git config --global user.email ''
+   
+   
+   
+   
+   
+  
    
    
    
