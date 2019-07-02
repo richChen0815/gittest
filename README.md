@@ -82,9 +82,8 @@ git 常用命令
        git reset --hard [coomit id | HEAD^^^^^^]
        
     本地仓库与远程
-      1. 克隆远程仓库 
-        git clone ssh
-       
+      1.  git clone ssh 克隆远程仓库 
+              
       2.git pull origin master
      
       3.git push orgin master (如果远程没有master分支，会自动创建master分支)
@@ -103,6 +102,9 @@ git 常用命令
       3.git branch -d xx  删除分支
       
       4.git merge dev   先切换到你要的分支，然后执行该操作。大致的意思就是 你把dev 分支过来。 接着你可以把不需要的分支remove.
+
+      5. git checkout -b dev origin/dev 创建与远程对应分支
+     
       
       工作区          缓存区           本地仓库      远程仓库 区别
    
