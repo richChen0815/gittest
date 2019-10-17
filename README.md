@@ -1,4 +1,9 @@
 初识分布式式代码管理工具
+
+  ##初始化配置
+  git config --global user.name "richchen"
+  git config --global user.email 1826815765@qq.com
+  git config --list
  
   默认操作步骤
    1. mkdir 目录 新建文件 
